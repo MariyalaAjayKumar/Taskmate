@@ -1,5 +1,5 @@
 
-
+import django_heroku
 from pathlib import Path
 import os
 import environ
@@ -128,3 +128,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = "todolist"
 
 LOGIN_URL = "login"
+
+django_heroku.settings(locals())
